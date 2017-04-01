@@ -34,22 +34,6 @@ class CollectViewController:UIViewController{
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        /*
-        while tmp{
-            print(blep.participantsNum-1)
-            print(blep.ellectingNum)
-            if blep.participantsNum-1 == blep.ellectingNum {
-                
-                tmp=false
-                //条件が揃ったら結果画面へ遷移
-                self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "result") as! ResultViewController, animated:true)
-                
-            }
-        }
- */
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

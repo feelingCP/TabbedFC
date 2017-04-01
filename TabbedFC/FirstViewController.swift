@@ -36,14 +36,7 @@ class FirstViewController: BaseViewController, GetProfileDeligate {
     @IBAction func makeRoom(_ sender: Any) {
         //プロフィール未設定の場合にアラートを表示し、入力画面に遷移させる
         if profile.name == "プロフィールを入力してください" || profile.name == "" {
-            let profAlert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
-            profAlert.addButton("入力画面へ") {
-                //ここに画面遷移を実装
-                let storyboard: UIStoryboard = self.storyboard!
-                let profView = storyboard.instantiateViewController(withIdentifier: "profile") as! ProfileViewController
-                self.present(profView, animated: true, completion: nil)
-            }
-            profAlert.showEdit("プロフィール未設定", subTitle: "名前と性別を設定してください") // Edit
+            alertProf()
         } else {
             self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "pno") as! PartisipantsNoViewController, animated: true)
         }
@@ -51,14 +44,7 @@ class FirstViewController: BaseViewController, GetProfileDeligate {
     
     @IBAction func joinRoom(_ sender: Any) {
         if profile.name == "プロフィールを入力してください" || profile.name == "" {
-            let profAlert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
-            profAlert.addButton("入力画面へ") {
-                //ここに画面遷移を実装
-                let storyboard: UIStoryboard = self.storyboard!
-                let profView = storyboard.instantiateViewController(withIdentifier: "profile") as! ProfileViewController
-                self.present(profView, animated: true, completion: nil)
-            }
-            profAlert.showEdit("プロフィール未設定", subTitle: "名前と性別を設定してください") // Edit
+            alertProf()
         } else {
             self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "asearch") as! AroundSerchViewController, animated: true)
         }
@@ -72,6 +58,17 @@ class FirstViewController: BaseViewController, GetProfileDeligate {
 
     func getProfile() {
         myName = profile.name
+    }
+    
+    func alertProf(){
+        let profAlert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        profAlert.addButton("入力画面へ") {
+            //ここに画面遷移を実装
+            let storyboard: UIStoryboard = self.storyboard!
+            let profView = storyboard.instantiateViewController(withIdentifier: "profile") as! ProfileViewController
+            self.present(profView, animated: true, completion: nil)
+        }
+        profAlert.showEdit("プロフィール未設定", subTitle: "名前と性別を設定してください")
     }
     
 }

@@ -111,6 +111,5 @@ class StartedViewController: BaseViewController, UITableViewDelegate, UITableVie
             startAlert.showNotice("確認", subTitle: selectedName!+"さんに決定しますか?", closeButtonTitle: "Cancel")
         }
     }
-    
 
 }

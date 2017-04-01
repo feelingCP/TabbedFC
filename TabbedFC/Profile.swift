@@ -39,14 +39,12 @@ class Profile: NSObject{
     }
     func readProf() -> Array<Any>{ //読み込む
         let theProf = defaults.object(forKey: "myProf")
-        // print(defaults.object(forKey: "myProf"))
-        // print(theProf)
         return theProf as! [Any]
     }
     
     func getProfile(deligate: GetProfileDeligate) -> Array<Any>{
         self.deligate = deligate
-//        return name
+
         return profArray
 
     }

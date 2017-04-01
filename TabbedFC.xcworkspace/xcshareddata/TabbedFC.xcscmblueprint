@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "307C2D0541665797206C8D6740B75EE1AF0D849E+++179433D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "307C2D0541665797206C8D6740B75EE1AF0D849E+++DD01138" : 9223372036854775807,
+    "307C2D0541665797206C8D6740B75EE1AF0D849E+++179433D" : 9223372036854775807,
+    "307C2D0541665797206C8D6740B75EE1AF0D849E+++C083327" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B7A94732-EA30-4E06-A146-3DECF1B70DBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "307C2D0541665797206C8D6740B75EE1AF0D849E+++DD01138" : "",
+    "307C2D0541665797206C8D6740B75EE1AF0D849E+++179433D" : "feelingCouple_iOS\/",
+    "307C2D0541665797206C8D6740B75EE1AF0D849E+++C083327" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TabbedFC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TabbedFC.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:feelingCP\/TabbedFC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "307C2D0541665797206C8D6740B75EE1AF0D849E+++179433D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/feelingCP\/feelingCouple_android.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "307C2D0541665797206C8D6740B75EE1AF0D849E+++C083327"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:feelingCP\/TabbedFC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "307C2D0541665797206C8D6740B75EE1AF0D849E+++DD01138"
+    }
+  ]
+}
