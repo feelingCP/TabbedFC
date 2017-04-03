@@ -41,6 +41,7 @@
 		DED0733C1E6C246D00092366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED0733A1E6C246D00092366 /* Main.storyboard */; };
 		DED0733E1E6C246D00092366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED0733D1E6C246D00092366 /* Assets.xcassets */; };
 		DED073411E6C246D00092366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED0733F1E6C246D00092366 /* LaunchScreen.storyboard */; };
+		DEE4A4B71E928D7200261BC0 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4A4B61E928D7200261BC0 /* ProfileData.swift */; };
 		DEE86D1D1E7F66C5005985E9 /* OrganizingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE86D1C1E7F66C5005985E9 /* OrganizingData.swift */; };
 		ED3D20941E6E5F9700643353 /* GetProfileDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D20931E6E5F9700643353 /* GetProfileDeligate.swift */; };
 		ED3D20961E6E629100643353 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D20951E6E629100643353 /* Profile.swift */; };
@@ -87,6 +88,7 @@
 		DED0733D1E6C246D00092366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED073401E6C246D00092366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED073421E6C246D00092366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE4A4B61E928D7200261BC0 /* ProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		DEE86D1C1E7F66C5005985E9 /* OrganizingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizingData.swift; sourceTree = "<group>"; };
 		ED3D20931E6E5F9700643353 /* GetProfileDeligate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProfileDeligate.swift; sourceTree = "<group>"; };
 		ED3D20951E6E629100643353 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				DED0733F1E6C246D00092366 /* LaunchScreen.storyboard */,
 				DE5421681E84089600F53ACD /* LaunchAnimationViewController.swift */,
 				DED073421E6C246D00092366 /* Info.plist */,
+				DEE4A4B61E928D7200261BC0 /* ProfileData.swift */,
 			);
 			path = TabbedFC;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				DE5421691E84089600F53ACD /* LaunchAnimationViewController.swift in Sources */,
 				DB08DD6D1E766E50008DA4D1 /* WaitingAroundViewController.swift in Sources */,
 				EDAC0FFB1E84FD1400ADADDA /* ResultViewController.swift in Sources */,
+				DEE4A4B71E928D7200261BC0 /* ProfileData.swift in Sources */,
 				DB08DD631E765437008DA4D1 /* BLE.swift in Sources */,
 				DB8C0C731E85423C00856AA2 /* WatingSelectedDataViewController.swift in Sources */,
 				DBEA0BAB1E7D2AAB0045CA0E /* RoomViewController.swift in Sources */,

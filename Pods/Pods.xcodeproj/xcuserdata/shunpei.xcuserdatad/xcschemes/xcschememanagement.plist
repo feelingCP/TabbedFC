@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8D3101EE7E5FF140EA1431F7F84CEC0D</key>
+		<key>036259E900A22981176D0501FECFB08E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C071ADDFAC1B20D79196577C0817E8DA</key>
+		<key>081898E41DC3FE8794472AB72A9511B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09540E3D64274B2316D0BBA0D40C660B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4805C58ACF11735B231D5437DDA15EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
