@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gWi-Bo-DgS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gWi-Bo-DgS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*さんかしゃ*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeP-Vi-4b4">
-                                <rect key="frame" x="79.5" y="100" width="217.5" height="30"/>
+                                <rect key="frame" x="79" y="100" width="218" height="30"/>
                                 <fontDescription key="fontDescription" name="AKANGEL" family="AK ANGEL" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -234,7 +234,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeN-ye-eKX">
-                                <rect key="frame" x="158" y="602" width="60" height="40"/>
+                                <rect key="frame" x="156.5" y="606" width="63" height="36"/>
                                 <fontDescription key="fontDescription" name="Das_Gitter" family="Das Gitter" pointSize="20"/>
                                 <state key="normal" title="Decide">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -244,7 +244,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZtB-Es-s0r">
-                                <rect key="frame" x="46" y="184" width="283" height="393"/>
+                                <rect key="frame" x="46" y="184" width="283" height="397"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -281,7 +281,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProfilE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eic-V2-hGz">
-                                <rect key="frame" x="97" y="70" width="181" height="30"/>
+                                <rect key="frame" x="144" y="65" width="87" height="35"/>
                                 <fontDescription key="fontDescription" name="AKANGEL" family="AK ANGEL" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -304,7 +304,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0G-o5-7lE">
-                                <rect key="frame" x="159" y="498" width="58" height="47"/>
+                                <rect key="frame" x="158" y="498" width="60" height="42"/>
                                 <fontDescription key="fontDescription" name="Das_Gitter" family="Das Gitter" pointSize="25"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -429,17 +429,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%&amp;るーむりすと&amp;'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEv-jM-fSv">
-                                <rect key="frame" x="78.5" y="100" width="219.5" height="30"/>
+                                <rect key="frame" x="60" y="100" width="256.5" height="35"/>
                                 <fontDescription key="fontDescription" name="AKANGEL" family="AK ANGEL" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-fy-a7E">
-                                <rect key="frame" x="46" y="155" width="283" height="422"/>
+                                <rect key="frame" x="46" y="160" width="283" height="421"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySh-Pd-dIp">
-                                <rect key="frame" x="171" y="602" width="32" height="40"/>
+                                <rect key="frame" x="168" y="606" width="38" height="36"/>
                                 <fontDescription key="fontDescription" name="Das_Gitter" family="Das Gitter" pointSize="20"/>
                                 <state key="normal" title="Join">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -595,7 +595,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[結果待ち]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mr-3H-4ju">
-                                <rect key="frame" x="95.5" y="100" width="186" height="40"/>
+                                <rect key="frame" x="95" y="100" width="186" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="O1c-E1-LJr"/>
                                 </constraints>
@@ -616,7 +616,7 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="geV-vd-lTg" kind="show" id="E5l-8m-GFV"/>
+                                    <segue destination="wfs-R5-AFY" kind="show" id="SM4-C1-0Gk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -635,37 +635,6 @@
             </objects>
             <point key="canvasLocation" x="4172" y="358"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="qKk-va-ziE">
-            <objects>
-                <viewController id="geV-vd-lTg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RbE-NZ-fER"/>
-                        <viewControllerLayoutGuide type="bottom" id="DaE-Cb-3g0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4xz-8K-Dq8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koji.png" translatesAutoresizingMaskIntoConstraints="NO" id="LLq-zV-0ey">
-                                <rect key="frame" x="84" y="190" width="207" height="286"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="286" id="9Gq-WB-zA6"/>
-                                    <constraint firstAttribute="width" constant="207" id="py1-e3-B4H"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="LLq-zV-0ey" firstAttribute="centerX" secondItem="4xz-8K-Dq8" secondAttribute="centerX" id="KrX-Ca-dvk"/>
-                            <constraint firstItem="LLq-zV-0ey" firstAttribute="centerY" secondItem="4xz-8K-Dq8" secondAttribute="centerY" id="Zsj-R6-A6k"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h0H-5B-9Fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4996" y="362"/>
-        </scene>
         <!--Collect View Controller-->
         <scene sceneID="4QY-bQ-Wt3">
             <objects>
@@ -679,7 +648,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全員が送信し終わるまでまってね!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmC-5v-CQ2">
-                                <rect key="frame" x="32.5" y="321" width="311" height="25"/>
+                                <rect key="frame" x="32" y="321" width="311" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Bbk-wu-R2w"/>
                                 </constraints>
@@ -725,7 +694,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bcF-Xm-liB">
-                                <rect key="frame" x="41" y="121" width="293" height="379"/>
+                                <rect key="frame" x="41" y="126.5" width="293" height="373.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmU-Ro-MF7">
@@ -768,7 +737,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ResulT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RN-TQ-Xam">
-                                <rect key="frame" x="105.5" y="60" width="165" height="31"/>
+                                <rect key="frame" x="140" y="60" width="95.5" height="36.5"/>
                                 <fontDescription key="fontDescription" name="AKANGEL" family="AK ANGEL" pointSize="31"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -913,5 +882,8 @@
         <image name="koji.png" width="123" height="316"/>
         <image name="library.png" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SM4-C1-0Gk"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

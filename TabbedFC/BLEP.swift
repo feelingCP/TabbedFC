@@ -23,6 +23,7 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
     var getSelectDataCharacteristic: CBMutableCharacteristic!
     var malesNumCharacteristic: CBMutableCharacteristic!
     var femalesNumCharacteristic: CBMutableCharacteristic!
+    var resultArrayCharacteristic: CBMutableCharacteristic!
     
     //参加人数
     var malesNum = 0
@@ -41,6 +42,7 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
     //受け取り回数
     var count = 0
     var count2 = 0
+    var count3 = 0; var count4 = 0//resultArrayCharacteristicの配列番号の指定で使用
     //データ受信数
     var datasNum = 0
     
@@ -75,6 +77,7 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
         let getSelectDataUUID = CBUUID(string: "A004")
         let malesNumUUID = CBUUID(string: "A005")
         let femalesNumUUID = CBUUID(string: "A006")
+        let resultArrayUUID = CBUUID(string: "A007")
         
         let manReadProperties: CBCharacteristicProperties = [.read]
         let womanReadProperties: CBCharacteristicProperties = [.read]
@@ -82,6 +85,7 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
         let getSelectDataProperties: CBCharacteristicProperties = [.write]
         let malesNumProperties: CBCharacteristicProperties = [.read]
         let femalesNumProperties: CBCharacteristicProperties = [.read]
+        let resultArrayProperties: CBCharacteristicProperties = [.read]
         
         let manReadPermissions: CBAttributePermissions = [.readable]
         let womanReadPermissions: CBAttributePermissions = [.readable]
@@ -89,6 +93,7 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
         let getSelectDataPermissions: CBAttributePermissions = [.writeable]
         let malesNumPermissions: CBAttributePermissions = [.readable]
         let femalesNumPermissions: CBAttributePermissions = [.readable]
+        let resultArrayPermissions: CBAttributePermissions = [.readable]
         
         manCharacteristic = CBMutableCharacteristic(
             type: manUUID,
@@ -126,8 +131,14 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
             value: nil,
             permissions: femalesNumPermissions)
         
+        resultArrayCharacteristic = CBMutableCharacteristic(
+            type: resultArrayUUID,
+            properties: resultArrayProperties,
+            value: nil,
+            permissions: resultArrayPermissions)
+        
         // キャラクタリスティックをサービスにセット
-        service.characteristics = [manCharacteristic, womanCharacteristic, writeCharacteristic, getSelectDataCharacteristic, malesNumCharacteristic, femalesNumCharacteristic]
+        service.characteristics = [manCharacteristic, womanCharacteristic, writeCharacteristic, getSelectDataCharacteristic, malesNumCharacteristic, femalesNumCharacteristic, resultArrayCharacteristic]
         
         // サービスを Peripheral Manager にセット
         peripheralManager.add(service)
@@ -244,6 +255,26 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
             
             // リクエストに応答
             peripheralManager.respond(to: request, withResult: CBATTError.Code.success)
+        }
+        
+        //最終結果を全員に送信
+        if request.characteristic.uuid.isEqual(resultArrayCharacteristic.uuid){
+            
+            data.resultArray = data.matching(targetData: data.targetData)
+            let value = data.resultArray[count3][count4].data(using: String.Encoding.utf8)
+            resultArrayCharacteristic.value = value
+            request.value = resultArrayCharacteristic.value
+            
+            if count3 == data.resultArray.count - 1{
+                count3 = 0
+            }else{
+                count3 += 1
+            }
+            if count4 == 2{
+                count4 = 0
+            }else{
+                count4 += 1
+            }
         }
     }
     
