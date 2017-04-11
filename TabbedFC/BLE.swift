@@ -21,6 +21,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     var selectDataCharacteristic: CBCharacteristic!
     var malesNumCharacteristic: CBCharacteristic!
     var femalesNumCharacteristic: CBCharacteristic!
+    var resultCPCharacteristic: CBCharacteristic!
     var myPeripheral: [CBPeripheral] = []
     var peripheralList: [String] = []
     static var flag = false
@@ -40,6 +41,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     let selectDataUUID = "A004"
     let malesNumUUID = "A005"
     let femalesNumUUID = "A006"
+    let resultUUID="A007"//追加
     
     static let sharedBle = BLE()
     var peripheralDelegate: GetPeripheralDelegate?
@@ -215,6 +217,10 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
                     peripheral.readValue(for: characteristic)
                 }
             }
+            //結果を得るキャラクタリスティック
+            if characteristic.uuid.isEqual(CBUUID(string: resultUUID)){                resultCPCharacteristic = characteristic
+                    peripheral.readValue(for: characteristic)
+            }
         }
             centralManager.stopScan()
 
@@ -249,6 +255,12 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             let text = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue)
             willPartnerNum = Int(text as! String)!
             print("相手候補\(willPartnerNum)+1人")
+        }
+        //結果を表示する
+        if characteristic.uuid.isEqual(CBUUID(string: resultUUID)){
+            let text = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue)
+            willPartnerNum = Int(text as! String)!//ここあとで消す
+            print("")
         }
     }
     
