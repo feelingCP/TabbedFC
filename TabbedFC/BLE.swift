@@ -24,9 +24,10 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     var myPeripheral: [CBPeripheral] = []
     var peripheralList: [String] = []
     static var flag = false
-    static var isCorrectDevice = false
+    static var isConnected = false
     static var isError = false
     var isFirst = true
+    
     
     //異性の数
     var willPartnerNum = 0
@@ -51,7 +52,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     private func initBle(){
 
         BLE.flag = false
-        BLE.isCorrectDevice = false
+        BLE.isConnected = false
         isScanning = false
         isFirst = true
         myPeripheral.removeAll()
@@ -68,7 +69,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         print("state: \(central.state)")
 
-        if central.state == CBManagerState.poweredOn{
+        if central.state == CBManagerState.poweredOn && !BLE.isConnected{
             centralManager.scanForPeripherals(withServices: nil, options: nil)
         }
     }
@@ -124,6 +125,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("接続成功！")
         print(centralManager.state)
+        BLE.isConnected = true
         //デリゲートをセット
         peripheral.delegate = self
         //サービス探索開始
@@ -281,8 +283,8 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             }
  */
             //一旦接続を切る
-            //centralManager = CBCentralManager(delegate: self, queue: nil)
-            centralManager.stopScan()
+            centralManager = CBCentralManager(delegate: self, queue: nil)
+            //centralManager.stopScan()
         }catch{
             initBle()
         }
@@ -335,8 +337,9 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
                 initBle()
             }
         }
-        //centralManager = CBCentralManager(delegate: self, queue: nil)
-        centralManager.stopScan()
+        //一旦接続を切る
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+        //centralManager.stopScan()
     }
     
     //相手をセレクト
@@ -357,15 +360,15 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             
             try peripheral.writeValue(num! as Data, for: selectDataCharacteristic, type: CBCharacteristicWriteType.withResponse)
             //一旦接続を切る
-            //centralManager = CBCentralManager(delegate: self, queue: nil)
-            centralManager.stopScan()
+            centralManager = CBCentralManager(delegate: self, queue: nil)
+            //centralManager.stopScan()
         }catch{
             initBle()
         }
     }
     
     func differentPeripheral(){
-        BLE.isCorrectDevice = false
+        BLE.isConnected = false
         centralManager.stopScan()
         }
     

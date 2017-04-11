@@ -75,6 +75,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.cellForRow(at:indexPath)
         cell?.accessoryType = .checkmark
         n = 0
+        initShowResult()
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.showResult), userInfo: nil, repeats: true)
     }
     
@@ -87,11 +88,6 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func showResult(tm: Timer){
-        arrow1.alpha = 0
-        arrow2.alpha = 0
-        arrow3.alpha = 0
-        heart2.alpha = 0
-        brokenHeart.alpha = 0
         if n == 0{
             yourName.text = ""
             myName.text = member[path!]
@@ -116,5 +112,13 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
             timer.invalidate()
             n = 0
         }
+    }
+    
+    func initShowResult(){
+        arrow1.alpha = 0
+        arrow2.alpha = 0
+        arrow3.alpha = 0
+        heart2.alpha = 0
+        brokenHeart.alpha = 0
     }
 }
