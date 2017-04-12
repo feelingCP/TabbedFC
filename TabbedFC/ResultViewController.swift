@@ -19,6 +19,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var brokenHeart: UIImageView!
     
     let member = OrganizingData.sharedData.males + OrganizingData.sharedData.females
+    var ble = BLE.sharedBle
     var timer: Timer!
     var n = 0
     var path: Int?
@@ -42,9 +43,9 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         heart2.alpha = 0
         brokenHeart.alpha = 0
         
-//        for i in 0...(member.count*3){
-//        ble.resultRead() //人数×３回読み取り
-//        }
+        for i in 0...(member.count*3){
+        ble.resultRead() //人数×３回読み取り
+        }
         resultArray = data.matching(targetData: data.targetData)
         
         // Do any additional setup after loading the view.
