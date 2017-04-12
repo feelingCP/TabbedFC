@@ -265,16 +265,17 @@ class BLEP: NSObject, CBPeripheralManagerDelegate {
             resultArrayCharacteristic.value = value
             request.value = resultArrayCharacteristic.value
             
-            if count3 == data.resultArray.count - 1{
-                count3 = 0
-            }else{
-                count3 += 1
-            }
-            if count4 == 2{
-                count4 = 0
-            }else{
+            if count4 != 2{
                 count4 += 1
+            }else{
+                count4 = 0
+                if count3 != data.resultArray.count-1{
+                    count3 = 0
+                }else{
+                    count3 += 1
+                }
             }
+
         }
     }
     
