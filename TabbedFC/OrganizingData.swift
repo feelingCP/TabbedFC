@@ -17,6 +17,7 @@ class OrganizingData: NSObject{
     var resultArray = [[String]]()
     var males: [String] = []
     var females: [String] = []
+    var result = [[String]]() //[[誰が,誰を選んで,カップル成立かどうか]
     
     static let sharedData = OrganizingData()
     
@@ -78,6 +79,8 @@ class OrganizingData: NSObject{
                 }
             }
         }
+        
+        result = []
         
         for i in 0...(mTarget.count-1){ //result男,numberOfCouple作成
             result.append([males[i]])

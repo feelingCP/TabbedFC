@@ -12,6 +12,7 @@ import CoreBluetooth
 class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
     
     var profile = Profile.sharedProfile
+    var data = OrganizingData.sharedData
     var isScanning = false
     var centralManager: CBCentralManager!
     var peripheral: CBPeripheral!
@@ -210,14 +211,16 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
                 }
             }
             //女の人数を得るキャラクタリスティック
-            if characteristic.uuid.isEqual(CBUUID(string: femalesNumUUID)){                femalesNumCharacteristic = characteristic
+            if characteristic.uuid.isEqual(CBUUID(string: femalesNumUUID)){
+                femalesNumCharacteristic = characteristic
                 if profile.gender == "0"{
                     peripheral.readValue(for: characteristic)
                 }
             }
             //結果を得るキャラクタリスティック
-            if characteristic.uuid.isEqual(CBUUID(string: resultUUID)){                resultCPCharacteristic = characteristic
-                    peripheral.readValue(for: characteristic)
+            if characteristic.uuid.isEqual(CBUUID(string: resultUUID)){
+                    resultCPCharacteristic = characteristic
+                    //peripheral.readValue(for: characteristic)
             }
         }
             centralManager.stopScan()
@@ -259,6 +262,11 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             let text = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue)
             willPartnerNum = Int(text as! String)!//ここあとで消す
             print("")
+            for i in 0...(BLEP.participantsNum - 1){
+                for j in 0...2{
+                    data.resultArray[i].append(text as! String);
+                }
+            }
         }
     }
     
@@ -293,8 +301,8 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             }
  */
             //一旦接続を切る
-            //centralManager = CBCentralManager(delegate: self, queue: nil)
-            centralManager.stopScan()
+            centralManager = CBCentralManager(delegate: self, queue: nil)
+            //centralManager.stopScan()
         }catch{
             initBle()
         }
@@ -347,8 +355,8 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
                 initBle()
             }
         }
-        //centralManager = CBCentralManager(delegate: self, queue: nil)
-        centralManager.stopScan()
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+        //centralManager.stopScan()
     }
     
     //相手をセレクト
@@ -369,8 +377,8 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
             
             try peripheral.writeValue(num! as Data, for: selectDataCharacteristic, type: CBCharacteristicWriteType.withResponse)
             //一旦接続を切る
-            //centralManager = CBCentralManager(delegate: self, queue: nil)
-            centralManager.stopScan()
+            centralManager = CBCentralManager(delegate: self, queue: nil)
+            //centralManager.stopScan()
         }catch{
             initBle()
         }
@@ -381,6 +389,13 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate{
         centralManager.stopScan()
         }
     
-    
+    //結果を受信
+    public func resultRead(){
+        do{
+            peripheral.readValue(for: resultCPCharacteristic)
+        }catch{
+            initBle()
+        }
+    }
 }
 

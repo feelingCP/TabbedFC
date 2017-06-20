@@ -18,7 +18,7 @@ class CollectViewController:UIViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        resultButton.isHidden = true
+//        resultButton.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
     }
