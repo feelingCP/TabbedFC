@@ -19,6 +19,7 @@
 		DB8C0C731E85423C00856AA2 /* WatingSelectedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8C0C721E85423C00856AA2 /* WatingSelectedDataViewController.swift */; };
 		DB972FB51E705E8200883A5F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB972FB41E705E8200883A5F /* ProfileViewController.swift */; };
 		DBB6305B1EF8F69300A7B9B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6305A1EF8F69300A7B9B4 /* Main.storyboard */; };
+		DBB6305F1EF8FC2D00A7B9B4 /* SelectModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6305E1EF8FC2D00A7B9B4 /* SelectModeViewController.swift */; };
 		DBC1AAB41E8A9D550058845C /* AK-ANGEL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AAA81E8A9D550058845C /* AK-ANGEL.ttf */; };
 		DBC1AAB51E8A9D550058845C /* Das Gitter Mac.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AAA91E8A9D550058845C /* Das Gitter Mac.ttf */; };
 		DBC1AAB61E8A9D550058845C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AAAB1E8A9D550058845C /* arrow.png */; };
@@ -63,6 +64,7 @@
 		DB8C0C721E85423C00856AA2 /* WatingSelectedDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatingSelectedDataViewController.swift; sourceTree = "<group>"; };
 		DB972FB41E705E8200883A5F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DBB6305A1EF8F69300A7B9B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DBB6305E1EF8FC2D00A7B9B4 /* SelectModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModeViewController.swift; sourceTree = "<group>"; };
 		DBC1AAA81E8A9D550058845C /* AK-ANGEL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AK-ANGEL.ttf"; sourceTree = "<group>"; };
 		DBC1AAA91E8A9D550058845C /* Das Gitter Mac.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Das Gitter Mac.ttf"; sourceTree = "<group>"; };
 		DBC1AAAB1E8A9D550058845C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				DBB6305A1EF8F69300A7B9B4 /* Main.storyboard */,
 				DB08DD621E765436008DA4D1 /* BLE.swift */,
 				DB0B8E691E78FDE800D2DCCB /* BLEP.swift */,
+				DBB6305E1EF8FC2D00A7B9B4 /* SelectModeViewController.swift */,
 				DEA6FECD1E839AB300AFDFC1 /* WaitingResultViewController.swift */,
 				DEE86D1C1E7F66C5005985E9 /* OrganizingData.swift */,
 				ED3D20931E6E5F9700643353 /* GetProfileDeligate.swift */,
@@ -353,6 +356,7 @@
 				DED073351E6C246D00092366 /* AppDelegate.swift in Sources */,
 				ED3D20941E6E5F9700643353 /* GetProfileDeligate.swift in Sources */,
 				DB08DD671E765A6F008DA4D1 /* GetPeripheralDelegate.swift in Sources */,
+				DBB6305F1EF8FC2D00A7B9B4 /* SelectModeViewController.swift in Sources */,
 				DEA6FECE1E839AB300AFDFC1 /* WaitingResultViewController.swift in Sources */,
 				DECFA0A01E84291500A34145 /* BaseTabBarController.swift in Sources */,
 				DBE270251E810D5E00C938F6 /* SelectViewController.swift in Sources */,
