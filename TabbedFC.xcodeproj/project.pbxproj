@@ -18,6 +18,7 @@
 		DB5A9EA71E84024400772919 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A9EA61E84024400772919 /* BaseViewController.swift */; };
 		DB8C0C731E85423C00856AA2 /* WatingSelectedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8C0C721E85423C00856AA2 /* WatingSelectedDataViewController.swift */; };
 		DB972FB51E705E8200883A5F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB972FB41E705E8200883A5F /* ProfileViewController.swift */; };
+		DBB6305B1EF8F69300A7B9B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6305A1EF8F69300A7B9B4 /* Main.storyboard */; };
 		DBC1AAB41E8A9D550058845C /* AK-ANGEL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AAA81E8A9D550058845C /* AK-ANGEL.ttf */; };
 		DBC1AAB51E8A9D550058845C /* Das Gitter Mac.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AAA91E8A9D550058845C /* Das Gitter Mac.ttf */; };
 		DBC1AAB61E8A9D550058845C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AAAB1E8A9D550058845C /* arrow.png */; };
@@ -38,7 +39,6 @@
 		DED073351E6C246D00092366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED073341E6C246D00092366 /* AppDelegate.swift */; };
 		DED073371E6C246D00092366 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED073361E6C246D00092366 /* FirstViewController.swift */; };
 		DED073391E6C246D00092366 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED073381E6C246D00092366 /* SecondViewController.swift */; };
-		DED0733C1E6C246D00092366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED0733A1E6C246D00092366 /* Main.storyboard */; };
 		DED0733E1E6C246D00092366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED0733D1E6C246D00092366 /* Assets.xcassets */; };
 		DED073411E6C246D00092366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED0733F1E6C246D00092366 /* LaunchScreen.storyboard */; };
 		DEE86D1D1E7F66C5005985E9 /* OrganizingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE86D1C1E7F66C5005985E9 /* OrganizingData.swift */; };
@@ -62,6 +62,7 @@
 		DB5A9EA61E84024400772919 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DB8C0C721E85423C00856AA2 /* WatingSelectedDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatingSelectedDataViewController.swift; sourceTree = "<group>"; };
 		DB972FB41E705E8200883A5F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DBB6305A1EF8F69300A7B9B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DBC1AAA81E8A9D550058845C /* AK-ANGEL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AK-ANGEL.ttf"; sourceTree = "<group>"; };
 		DBC1AAA91E8A9D550058845C /* Das Gitter Mac.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Das Gitter Mac.ttf"; sourceTree = "<group>"; };
 		DBC1AAAB1E8A9D550058845C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		DED073341E6C246D00092366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED073361E6C246D00092366 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DED073381E6C246D00092366 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DED0733B1E6C246D00092366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED0733D1E6C246D00092366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED073401E6C246D00092366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED073421E6C246D00092366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +171,7 @@
 				ED3D20951E6E629100643353 /* Profile.swift */,
 				DB972FB41E705E8200883A5F /* ProfileViewController.swift */,
 				EDAC0FF81E831FC500ADADDA /* PartisipantsNoViewController.swift */,
+				DBB6305A1EF8F69300A7B9B4 /* Main.storyboard */,
 				DB08DD621E765436008DA4D1 /* BLE.swift */,
 				DB0B8E691E78FDE800D2DCCB /* BLEP.swift */,
 				DEA6FECD1E839AB300AFDFC1 /* WaitingResultViewController.swift */,
@@ -179,7 +180,6 @@
 				DB08DD641E765A5F008DA4D1 /* AroundSerchViewController.swift */,
 				DBEA0BAA1E7D2AAB0045CA0E /* RoomViewController.swift */,
 				DB08DD661E765A6F008DA4D1 /* GetPeripheralDelegate.swift */,
-				DED0733A1E6C246D00092366 /* Main.storyboard */,
 				DB8C0C721E85423C00856AA2 /* WatingSelectedDataViewController.swift */,
 				DECFA09F1E84291500A34145 /* BaseTabBarController.swift */,
 				DB5A9EA61E84024400772919 /* BaseViewController.swift */,
@@ -272,8 +272,8 @@
 				DBC1AAB51E8A9D550058845C /* Das Gitter Mac.ttf in Resources */,
 				DBC1AABB1E8A9D550058845C /* LaunchHeart.png in Resources */,
 				DED0733E1E6C246D00092366 /* Assets.xcassets in Resources */,
-				DED0733C1E6C246D00092366 /* Main.storyboard in Resources */,
 				DBC1AABC1E8A9D550058845C /* library.png in Resources */,
+				DBB6305B1EF8F69300A7B9B4 /* Main.storyboard in Resources */,
 				DBC1AABE1E8A9D550058845C /* smallHeart.png in Resources */,
 				DBC1AABD1E8A9D550058845C /* newHeart.png in Resources */,
 				DBC1AABA1E8A9D550058845C /* koji.png in Resources */,
@@ -368,14 +368,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DED0733A1E6C246D00092366 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DED0733B1E6C246D00092366 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DED0733F1E6C246D00092366 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
