@@ -38,7 +38,7 @@ class FirstViewController: BaseViewController, GetProfileDeligate {
         if profile.name == "プロフィールを入力してください" || profile.name == "" {
             alertProf()
         } else {
-            self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "pno") as! SelectModeViewController, animated: true)
+            self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "selectMode") as! SelectModeViewController, animated: true)
         }
     }
     
